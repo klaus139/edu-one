@@ -20,7 +20,7 @@ app.use(cors({
 
 
 
-app.use('/user', userRouter)
+app.use('/api/user', userRouter)
 
 
 app.use('*', (req:Request, res:Response, next:NextFunction) => {
