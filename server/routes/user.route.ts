@@ -1,9 +1,10 @@
 import express,{Request, Response} from "express"
-import { createUser } from "../controller/authController"
+import { createUser, loginUser } from "../controller/authController"
 
 const userRouter = express.Router()
 
 userRouter.post("/register", createUser )
+userRouter.post('/login', loginUser)
 
 
 
